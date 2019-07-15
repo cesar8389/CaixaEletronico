@@ -1,2 +1,2 @@
 # CaixaEletronico
-Código simulado de caixa eletrônico feito em aula
+Código simulador de caixa eletrônico feito em aula
