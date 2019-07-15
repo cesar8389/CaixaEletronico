@@ -8,6 +8,7 @@ namespace CaixaEletronico
     {
         public void sacar()
         {
+            //saldo aparece zero nessa classe
             int saque;
             int sCinquenta = 0;
             int sVinte = 0;
