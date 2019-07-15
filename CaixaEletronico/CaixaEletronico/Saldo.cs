@@ -11,6 +11,7 @@ namespace CaixaEletronico
         private int _dez;
         private int _saldo;
 
+
         //verificar quantidade de notas
         public int notasCinquenta {
             get { return this._cinquenta; }
