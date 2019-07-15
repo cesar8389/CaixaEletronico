@@ -4,11 +4,11 @@ using System.Text;
 
 namespace CaixaEletronico
 {
-    class OpcoesMenu
+    class OpcoesMenu : Saldo
     {
 
         private int _op;
-        Saldo cofre = new Saldo();
+        
 
         public void op(int a)
         {
@@ -20,6 +20,8 @@ namespace CaixaEletronico
         }
         public void Operacoes()
         {
+            //var cofre = new Saldo();
+            Mensagens mensagens = new Mensagens();
             int saque;
             int sCinquenta;
             int sVinte;
@@ -28,18 +30,23 @@ namespace CaixaEletronico
             switch (this._op)
             {
                 case 1:
+                    Console.Clear();
                     Console.WriteLine("Insira a quantidade de notas de 50 reais");
-                    cofre.addCinquenta((Convert.ToInt32(Console.ReadLine())));
+                    addCinquenta((Convert.ToInt32(Console.ReadLine())));
                     break;
                 case 2:
+                    Console.Clear();
                     Console.WriteLine("Insira a quantidade de notas de 20 reais");
-                    cofre.addVinte(Convert.ToInt32(Console.ReadLine()));
+                    addVinte(Convert.ToInt32(Console.ReadLine()));
                     break;
                 case 3:
+                    Console.Clear();
                     Console.WriteLine("Insira a quantidade de notas de 10 reais");
-                    cofre.addDez(Convert.ToInt32(Console.ReadLine()));
+                    addDez(Convert.ToInt32(Console.ReadLine()));
                     break;
                 case 4:
+                    Console.Clear();
+                    Console.WriteLine("Esse caixa opera apenas com notas de 10, 20 e 50 reais");
                     Console.WriteLine("Qual o valor desejado:");
                     saque = Convert.ToInt32(Console.ReadLine());
                     //Calcular quantidade de notas
@@ -55,13 +62,20 @@ namespace CaixaEletronico
                     Console.WriteLine("-" + sVinte + "notas de vinte reais");
                     Console.WriteLine("-" + sDez + "notas de dez reais");
                     //Atualizar saldo do caixa eletronico
-                    cofre.retiraCinquenta(sCinquenta);
-                    cofre.retiraVinte(sVinte);
-                    cofre.retiraDez(sDez);
+                    retiraCinquenta(sCinquenta);
+                    retiraVinte(sVinte);
+                    retiraDez(sDez);
                     break;
                 case 5:
-                    cofre.calculaSaldo();
-                    Console.WriteLine(cofre.saldo);
+                    Console.Clear();
+                    calculaSaldo();
+                    Console.WriteLine("O caixa atualmente conta com as seguintes notas:\n" +
+                    notasCinquenta + " notas de cinquenta reais \n" +
+                    notasVinte + " notas de vinte reais \n" +
+                    notasDez + " notas de dez reais\n" +
+                    "Totalizando R$" + saldo + ",00");
+                    //mensagens.txtSaldo();
+                    
                     break;
                 default:
                     break;
