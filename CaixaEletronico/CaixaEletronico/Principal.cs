@@ -10,9 +10,15 @@ namespace CaixaEletronico
             //Chamar objetos
             var menuPrincipal = new MenuPrincipal();
             var opMenuPrincipal = new Back.OpMenu();
-            //Imprimir
-            Console.WriteLine(menuPrincipal.txtMenu());
-            opMenuPrincipal.op(Convert.ToInt32(Console.ReadLine()));
+            int val;
+            do
+            {
+                Console.Clear();
+                //Imprimir
+                Console.WriteLine(menuPrincipal.txtMenu());
+                val = Convert.ToInt32(Console.WriteLine());
+                opMenuPrincipal.oMenu(val);
+            } while (val != 5);
         }
     }
     }

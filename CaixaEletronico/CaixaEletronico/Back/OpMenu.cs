@@ -7,12 +7,10 @@ namespace CaixaEletronico.Back
 {
     class OpMenu:Cofre
     {
-        public OpMenu(int op)
+        public void oMenu(int op)
         {
             var mDeposito = new Front.MenuDeposito();
             var mSaldo = new Front.MenuSaldo();
-            do
-            {
                 switch (op)
                 {
                     case 1:
@@ -32,13 +30,9 @@ namespace CaixaEletronico.Back
                     case 4:
                         //log
                         break;
-                    case 5:
-                        //sair
-                        break;
                     default:
                         break;
                 }
-            } while (op != 5);
         }
     }
 }
