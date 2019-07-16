@@ -4,17 +4,18 @@ using System.Text;
 
 namespace CaixaEletronico.Front
 {
-    class MenuSaldo
+    class MenuSaldo:Cofre
     {
-        public void txtSaldo(int a, int b, int c, int d)
+        public void txtSaldo()
         {
+            aSaldo();
             Console.WriteLine("________________________\n" +
                     "Banco Central Lateral Direito\n" +
-                    $"Saldo atual: R${a},00.\n" +
+                    $"Saldo atual: R${valorSaldo},00.\n" +
                     "Contagem individual de notas: \n" +
-                    $"{b} - 50 reais\n" +
-                    $"{c} - 20 reais\n" +
-                    $"{d} - 10 reais\n" +
+                    $"{notasCinquenta} - 50 reais\n" +
+                    $"{notasVinte} - 20 reais\n" +
+                    $"{notasDez} - 10 reais\n" +
                     "________________________\n");
             Console.ReadLine();
             

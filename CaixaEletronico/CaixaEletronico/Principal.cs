@@ -16,7 +16,7 @@ namespace CaixaEletronico
                 Console.Clear();
                 //Imprimir
                 Console.WriteLine(menuPrincipal.txtMenu());
-                val = Convert.ToInt32(Console.WriteLine());
+                val = Convert.ToInt32(Console.ReadLine());
                 opMenuPrincipal.oMenu(val);
             } while (val != 5);
         }

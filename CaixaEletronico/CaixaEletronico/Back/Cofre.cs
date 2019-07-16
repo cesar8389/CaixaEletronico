@@ -28,7 +28,7 @@ namespace CaixaEletronico
         //depositar notas
         public void addCinquenta (int valor)
         {
-            this._cinquenta += valor;
+            this._cinquenta += valor; 
         }
         public void addVinte (int valor)
         {
@@ -58,7 +58,8 @@ namespace CaixaEletronico
         {
             this._saldo = (this._cinquenta * 50) + (this._vinte * 20) + (this._dez * 10);
         }
-        public int valorSaldo {
+        public int valorSaldo
+        {
             get { return this._saldo; }
         }
     }

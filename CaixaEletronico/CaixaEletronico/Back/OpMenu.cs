@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CaixaEletronico.Back
 {
-    class OpMenu:Cofre
+    class OpMenu
     {
         public void oMenu(int op)
         {
@@ -16,7 +16,7 @@ namespace CaixaEletronico.Back
                     case 1:
                         //deposito
                         Console.Clear();
-                        Console.WriteLine(mDeposito.txtMenuDeposito());
+                        mDeposito.txtMenuDeposito();
                         break;
                     case 2:
                         //saque
@@ -25,7 +25,7 @@ namespace CaixaEletronico.Back
                     case 3:
                         //saldo
                         Console.Clear();
-                        mSaldo.txtSaldo(valorSaldo, notasCinquenta, notasVinte, notasDez);
+                        mSaldo.txtSaldo();
                         break;
                     case 4:
                         //log
