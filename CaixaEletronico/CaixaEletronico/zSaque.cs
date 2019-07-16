@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace CaixaEletronico
-{
-    class Saque : Saldo
+{/*
+    class Saque
     {
-        public void sacar()
+        public void sacar(int sSaldo, int sCinquenta, int sVinte, int sDez)
         {
+            var saldo = new Saldo();
             //saldo aparece zero nessa classe
             int saque;
-            int sCinquenta = 0;
-            int sVinte = 0;
-            int sDez = 0;
+            /*int sCinquenta = saldo.notasCinquenta;
+            int sVinte = saldo.notasVinte;
+            int sDez = saldo.notasDez;
+            int sSaldo = saldo.saldo;
             int resto;
             var rs = new RegrasSaque();
-
+            saldo.calculaSaldo();
             Console.WriteLine("Esse caixa opera apenas com notas de 10, 20 e 50 reais");
-            Console.WriteLine(saldo);
+            Console.WriteLine(sSaldo);
             Console.WriteLine("Qual o valor desejado:");
             saque = Convert.ToInt32(Console.ReadLine());
             resto = saque;
@@ -25,33 +27,33 @@ namespace CaixaEletronico
             if (rs.multiploDez(saque))
             {
                 // verifica se o valor está disponivel
-                if (rs.disponivel(saque))
+                if (rs.disponivel(sSaldo, resto))
                 {
                     //Calcular quantidade de notas
-                    if (rs.nCinquenta(resto))
+                    if (rs.nCinquenta(resto, sCinquenta))
                     {
-                        while (notasCinquenta > 0 && resto > 0)
+                        while (sCinquenta >= 0 && resto >= 0)
                         {
                             resto -= 50;
-                            retiraCinquenta(1);
+                            saldo.retiraCinquenta(1);
                             sCinquenta += 1;
                         }
                     }
-                    else if (rs.nVinte(resto))
+                    else if (rs.nVinte(resto, sVinte))
                     {
-                        while (notasVinte > 0 && resto > 0)
+                        while (sVinte >= 0 && resto >= 0)
                         {
                             resto -= 20;
-                            retiraVinte(1);
+                            saldo.retiraVinte(1);
                             sVinte += 1;
                         }
                     }
-                    else if (rs.nDez(resto))
+                    else if (rs.nDez(resto, sDez))
                     {
-                        while (notasDez > 0 && resto > 0)
+                        while (sDez >= 0 && resto >= 0)
                         {
                             resto -= 10;
-                            retiraDez(1);
+                            saldo.retiraDez(1);
                             sDez += 1;
                         }
                     }
@@ -62,9 +64,9 @@ namespace CaixaEletronico
                     Console.WriteLine("-" + sVinte + "notas de vinte reais");
                     Console.WriteLine("-" + sDez + "notas de dez reais");
                 }
-                else { Console.WriteLine("Valor indisponivel. Saldo atual: R$" + saldo + ",00."); }
+                else { Console.WriteLine("Valor indisponivel. Saldo atual: R$" + sSaldo + ",00."); }
             }
             else { Console.WriteLine("Esse caixa só aceita saque de valores multiplos de 10"); }
         }
-    }
+    }*/
 }

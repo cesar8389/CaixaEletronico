@@ -4,12 +4,12 @@ using System.Text;
 
 namespace CaixaEletronico
 {
-    class Saldo
+    class Cofre
     {
+        private int _saldo;
         private int _cinquenta;
         private int _vinte;
         private int _dez;
-        private int _saldo;
 
 
         //verificar quantidade de notas
@@ -23,10 +23,6 @@ namespace CaixaEletronico
         public int notasDez
         {
             get { return this._dez; }
-        }
-
-        public int saldo {
-            get { return this._saldo; }
         }
 
         //depositar notas
@@ -57,9 +53,13 @@ namespace CaixaEletronico
             this._dez -= valor;
         }
 
-        public void calculaSaldo()
+        //Tratar saldo
+        public void aSaldo()
         {
             this._saldo = (this._cinquenta * 50) + (this._vinte * 20) + (this._dez * 10);
+        }
+        public int valorSaldo {
+            get { return this._saldo; }
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace CaixaEletronico
-{
+{/*
     class OpcoesMenu : Saldo
     {
 
@@ -24,6 +24,7 @@ namespace CaixaEletronico
             Mensagens mensagens = new Mensagens();
             var rs = new RegrasSaque();
             var saque = new Saque();
+            
             switch (this._op)
             {
                 case 1:
@@ -46,7 +47,7 @@ namespace CaixaEletronico
                     break;
                 case 4:
                     Console.Clear();
-                    saque.sacar();                    
+                    saque.sacar(saldo, notasCinquenta, notasVinte, notasDez);
                     break;
                 case 5:
                     Console.Clear();
@@ -63,5 +64,5 @@ namespace CaixaEletronico
                     break;
             }
         }
-    }
+    }*/
 }

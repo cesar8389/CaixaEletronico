@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CaixaEletronico
 {
-    class Mensagens : Saldo
+    /*class Mensagens : Saldo
     {
         //Saldo valores = new Saldo();
         OpcoesMenu opMenu = new OpcoesMenu();
@@ -40,5 +40,5 @@ namespace CaixaEletronico
                    "Totalizando R$" + saldo + ",00");
         }
 
-    }
+    }*/
 }
