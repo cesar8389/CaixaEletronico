@@ -4,22 +4,10 @@ using System.Text;
 
 namespace CaixaEletronico.Cofre
 {
-    class Cedulas : ICedulas
+    class Cedulas
     {
-
-        public string Nome(string nome)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int Quantidade(int quantidade)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int Valor(int valor)
-        {
-            throw new NotImplementedException();
-        }
+        public int cinquenta { get; set; }
+        public int vinte { get; set; }
+        public int dez { get; set; }
     }
 }

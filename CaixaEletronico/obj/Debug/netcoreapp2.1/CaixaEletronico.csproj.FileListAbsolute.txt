@@ -1,0 +1,4 @@
+C:\repository\git\CaixaEletronico\CaixaEletronico\obj\Debug\netcoreapp2.1\CaixaEletronico.csprojAssemblyReference.cache
+C:\repository\git\CaixaEletronico\CaixaEletronico\obj\Debug\netcoreapp2.1\CaixaEletronico.csproj.CoreCompileInputs.cache
+C:\repository\git\CaixaEletronico\CaixaEletronico\obj\Debug\netcoreapp2.1\CaixaEletronico.AssemblyInfoInputs.cache
+C:\repository\git\CaixaEletronico\CaixaEletronico\obj\Debug\netcoreapp2.1\CaixaEletronico.AssemblyInfo.cs

@@ -1,0 +1,11 @@
+C:\repository\git\CaixaEletronico2\obj\Debug\netcoreapp2.1\CaixaEletronico2.csprojAssemblyReference.cache
+C:\repository\git\CaixaEletronico2\obj\Debug\netcoreapp2.1\CaixaEletronico2.csproj.CoreCompileInputs.cache
+C:\repository\git\CaixaEletronico2\obj\Debug\netcoreapp2.1\CaixaEletronico2.AssemblyInfoInputs.cache
+C:\repository\git\CaixaEletronico2\obj\Debug\netcoreapp2.1\CaixaEletronico2.AssemblyInfo.cs
+C:\repository\git\CaixaEletronico2\bin\Debug\netcoreapp2.1\CaixaEletronico2.deps.json
+C:\repository\git\CaixaEletronico2\bin\Debug\netcoreapp2.1\CaixaEletronico2.runtimeconfig.json
+C:\repository\git\CaixaEletronico2\bin\Debug\netcoreapp2.1\CaixaEletronico2.runtimeconfig.dev.json
+C:\repository\git\CaixaEletronico2\bin\Debug\netcoreapp2.1\CaixaEletronico2.dll
+C:\repository\git\CaixaEletronico2\bin\Debug\netcoreapp2.1\CaixaEletronico2.pdb
+C:\repository\git\CaixaEletronico2\obj\Debug\netcoreapp2.1\CaixaEletronico2.dll
+C:\repository\git\CaixaEletronico2\obj\Debug\netcoreapp2.1\CaixaEletronico2.pdb
