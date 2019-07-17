@@ -9,7 +9,7 @@ namespace CaixaEletronico
             //-------------------Objetos
             var cofre = new Cofre.Saldo();
             var menuPrincipal = new MenuPrincipal();
-            var menuSaldo = new MenuSaldo();
+            _ = new MenuSaldo();
             var menuDeposito = new MenuDeposito();
             var menuSaque = new MenuSaque();
             var regrasSaque = new RegrasSaque();
