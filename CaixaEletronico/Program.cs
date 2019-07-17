@@ -7,7 +7,7 @@ namespace CaixaEletronico
         static void Main(string[] args)
         {
             //-------------------Objetos
-            var cofre = new Cofre();
+            var cofre = new Cofre.Saldo();
             var menuPrincipal = new MenuPrincipal();
             var menuSaldo = new MenuSaldo();
             var menuDeposito = new MenuDeposito();
@@ -31,7 +31,7 @@ namespace CaixaEletronico
                 {
                     case 1:
                         //Deposito
-                        Console.Clear();
+                        /*Console.Clear();
                         Console.WriteLine(menuDeposito.txtMenuDeposito());
                         caso1 = Convert.ToInt32(Console.ReadLine());
                         int valor = menuDeposito.txtSubMenuDeposito(caso1);
@@ -39,24 +39,24 @@ namespace CaixaEletronico
                         else if (caso1 == 2) { cofre.vinte += valor; }
                         else if (caso1 == 3) { cofre.dez += valor; }
                         Console.WriteLine("Deposito efetuado com sucesso!");
-                        Console.ReadLine();
+                        Console.ReadLine();*/
                         break;
                     case 2:
                         //Saque
-                        Console.Clear();
+                        /*Console.Clear();
                         Console.WriteLine(menuSaque.txtMenuSaque());
                         saque = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine(regrasSaque.Saque(saque, cofre.cinquenta, cofre.vinte, cofre.dez));
-                        Console.ReadLine();
+                        Console.ReadLine();*/
                         break;
                     case 3:
                         //saldo
-                        Console.Clear();
+                        /*Console.Clear();
                         Console.WriteLine(menuSaldo.txtMenuSaldo((cofre.cinquenta * 50) + (cofre.vinte * 20) + (cofre.dez * 10),
                             cofre.cinquenta,
                             cofre.vinte,
                             cofre.dez));
-                        Console.ReadLine();
+                        Console.ReadLine();*/
                         break;
                     case 0:
                         break;
